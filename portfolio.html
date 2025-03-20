@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Kojo Nytro - Music Producer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Kojo Nytro</a>
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#beats">Beats</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="portfolio.html#gallery">Gallery</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-background">
+            <div class="hero-image-wrapper">
+                <img src="images/nytro image 3.jpg" alt="Studio Equipment" class="hero-image">
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">My <span class="gradient-text">Creative</span> Portfolio</h1>
+                    <p class="hero-subtitle">Explore the sounds and stories behind my productions</p>
+                </div>
+                <div class="hero-cta">
+                    <a href="#portfolio-grid" class="btn-primary">View Projects</a>
+                    <a href="#gallery-section" class="btn-outline">Explore Gallery</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrows">
+                <span class="arrow"></span>
+                <span class="arrow"></span>
+                <span class="arrow"></span>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Portfolio Section -->
+    <section class="portfolio-section" id="portfolio-grid">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <p class="section-subtitle">A selection of my best work across various genres and styles</p>
+            </div>
+            
+            <div class="filter-container">
+                <div class="filter-tabs">
+                    <button class="filter-tab active" data-filter="all">
+                        <span class="tab-icon"><i class="fa-solid fa-border-all"></i></span>
+                        <span class="tab-text">All</span>
+                    </button>
+                    <button class="filter-tab" data-filter="production">
+                        <span class="tab-icon"><i class="fa-solid fa-music"></i></span>
+                        <span class="tab-text">Production</span>
+                    </button>
+                    <button class="filter-tab" data-filter="mixing">
+                        <span class="tab-icon"><i class="fa-solid fa-sliders"></i></span>
+                        <span class="tab-text">Mixing</span>
+                    </button>
+                    <button class="filter-tab" data-filter="mastering">
+                        <span class="tab-icon"><i class="fa-solid fa-waveform"></i></span>
+                        <span class="tab-text">Mastering</span>
+                    </button>
+                    <button class="filter-tab" data-filter="composition">
+                        <span class="tab-icon"><i class="fa-solid fa-pen-fancy"></i></span>
+                        <span class="tab-text">Composition</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="portfolio-item" data-category="production">
+                    <div class="portfolio-card">
+                        <div class="card-media">
+                            <img src="project images/summer-vibes-EP.jpg" alt="Summer Vibes EP">
+                            <div class="card-overlay">
+                                <div class="overlay-content">
+                                    <span class="project-category">Production</span>
+                                    <h3 class="project-title">Summer Vibes EP</h3>
+                                    <p class="project-client">Maya Jones</p>
+                                </div>
+                                <button class="view-project" data-project="1">
+                                    <span>View Project</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="portfolio-item large" data-category="mixing">
+                    <div class="portfolio-card">
+                        <div class="card-media">
+                            <img src="project images/midnight-chronicle image.jpg" alt="Midnight Chronicles">
+                            <div class="card-overlay">
+                                <div class="overlay-content">
+                                    <span class="project-category">Mixing</span>
+                                    <h3 class="project-title">Midnight Chronicles</h3>
+                                    <p class="project-client">Kojo Nytro</p>
+                                </div>
+                                <button class="view-project" data-project="2">
+                                    <span>View Project</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="portfolio-item" data-category="composition">
+                    <div class="portfolio-card">
+                        <div class="card-media">
+                            <img src="project images/5Star-Love-img.jpg" alt="Ethereal Dreams">
+                            <div class="card-overlay">
+                                <div class="overlay-content">
+                                    <span class="project-category">Composition</span>
+                                    <h3 class="project-title">5Star Love</h3>
+                                    <p class="project-client">Kojo Nytro</p>
+                                </div>
+                                <button class="view-project" data-project="3">
+                                    <span>View Project</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="portfolio-item vertical" data-category="production">
+                    <div class="portfolio-card">
+                        <div class="card-media">
+                            <img src="project images/soul revival-img.jpg" alt="Soul Revival">
+                            <div class="card-overlay">
+                                <div class="overlay-content">
+                                    <span class="project-category">Production</span>
+                                    <h3 class="project-title">Soul Revival</h3>
+                                    <p class="project-client">Kwesi Arthur</p>
+                                </div>
+                                <button class="view-project" data-project="4">
+                                    <span>View Project</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="portfolio-item" data-category="mastering">
+                    <div class="portfolio-card">
+                        <div class="card-media">
+                            <img src="project images/trap-evolution.jpg" alt="Trap Evolution">
+                            <div class="card-overlay">
+                                <div class="overlay-content">
+                                    <span class="project-category">Mastering</span>
+                                    <h3 class="project-title">Trap Evolution</h3>
+                                    <p class="project-client">Urban Collective Records</p>
+                                </div>
+                                <button class="view-project" data-project="5">
+                                    <span>View Project</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="portfolio-item large" data-category="composition">
+                    <div class="portfolio-card">
+                        <div class="card-media">
+                            <img src="project images/commercial jingle.jpg" alt="Commercial Jingle">
+                            <div class="card-overlay">
+                                <div class="overlay-content">
+                                    <span class="project-category">Composition</span>
+                                    <h3 class="project-title">Commercial Jingle</h3>
+                                    <p class="project-client">Refresh Beverages</p>
+                                </div>
+                                <button class="view-project" data-project="6">
+                                    <span>View Project</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 7 -->
+                <div class="portfolio-item" data-category="mixing">
+                    <div class="portfolio-card">
+                        <div class="card-media">
+                            <img src="project images/Acoustic session.jpg" alt="Acoustic Sessions">
+                            <div class="card-overlay">
+                                <div class="overlay-content">
+                                    <span class="project-category">Mixing</span>
+                                    <h3 class="project-title">Acoustic Sessions</h3>
+                                    <p class="project-client">The Wanderers</p>
+                                </div>
+                                <button class="view-project" data-project="7">
+                                    <span>View Project</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 8 -->
+                <div class="portfolio-item vertical" data-category="production">
+                    <div class="portfolio-card">
+                        <div class="card-media">
+                            <img src="project images/electric fusion.jpg" alt="Electronic Fusion">
+                            <div class="card-overlay">
+                                <div class="overlay-content">
+                                    <span class="project-category">Production</span>
+                                    <h3 class="project-title">Electronic Fusion</h3>
+                                    <p class="project-client">Fusion Collective</p>
+                                </div>
+                                <button class="view-project" data-project="8">
+                                    <span>View Project</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Photo <span class="gradient-text">Gallery</span></h2>
+                <p class="section-subtitle">Behind the scenes, studio sessions, and live performances</p>
+            </div>
+            
+            <div class="filter-container">
+                <div class="filter-tabs">
+                    <button class="filter-tab active" data-filter="all">
+                        <span class="tab-text">All Photos</span>
+                    </button>
+                    <button class="filter-tab" data-filter="studio">
+                        <span class="tab-text">Studio</span>
+                    </button>
+                    <button class="filter-tab" data-filter="performance">
+                        <span class="tab-text">Performances</span>
+                    </button>
+                    <button class="filter-tab" data-filter="behind-scenes">
+                        <span class="tab-text">Behind the Scenes</span>
+                    </button>
+                    <button class="filter-tab" data-filter="equipment">
+                        <span class="tab-text">Equipment</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="gallery-grid">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item" data-category="studio">
+                    <div class="gallery-card">
+                        <img src="gallery images/recording session.jpg" alt="Studio Session">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <span class="gallery-category">Studio</span>
+                                <h3 class="gallery-title">Recording Session</h3>
+                                <p class="gallery-date">June 2023</p>
+                            </div>
+                            <button class="view-image" data-src="/placeholder.svg?height=1200&width=1600&text=Studio%20Session" data-title="Recording Session" data-description="Working on the Summer Vibes EP with Maya Jones">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item large" data-category="performance">
+                    <div class="gallery-card">
+                        <img src="gallery images/performance image.jpg" alt="Live Performance">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <span class="gallery-category">Performance</span>
+                                <h3 class="gallery-title">Summer Festival</h3>
+                                <p class="gallery-date">July 2023</p>
+                            </div>
+                            <button class="view-image" data-src="/placeholder.svg?height=1600&width=2400&text=Live%20Performance" data-title="Summer Festival" data-description="Live performance at the Annual Summer Music Festival">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item" data-category="behind-scenes">
+                    <div class="gallery-card">
+                        <img src="images/nytro-image1.jpg" alt="Behind the Scenes">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <span class="gallery-category">Behind the Scenes</span>
+                                <h3 class="gallery-title">Music Video Shoot</h3>
+                                <p class="gallery-date">May 2023</p>
+                            </div>
+                            <button class="view-image" data-src="/placeholder.svg?height=1200&width=1600&text=Behind%20Scenes" data-title="Music Video Shoot" data-description="Behind the scenes at the 'Summer Vibes' music video shoot">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item vertical" data-category="equipment">
+                    <div class="gallery-card">
+                        <img src="gallery images/studio-equipment.jpg" alt="Studio Equipment">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <span class="gallery-category">Equipment</span>
+                                <h3 class="gallery-title">Mixing Console</h3>
+                                <p class="gallery-date">April 2023</p>
+                            </div>
+                            <button class="view-image" data-src="/placeholder.svg?height=2000&width=1200&text=Equipment" data-title="Mixing Console" data-description="My custom SSL mixing console used for all major productions">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item" data-category="studio">
+                    <div class="gallery-card">
+                        <img src="gallery images/vocal recording.jpg" alt="Vocal Session">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <span class="gallery-category">Studio</span>
+                                <h3 class="gallery-title">Vocal Recording</h3>
+                                <p class="gallery-date">March 2023</p>
+                            </div>
+                            <button class="view-image" data-src="/placeholder.svg?height=1200&width=1600&text=Vocal%20Session" data-title="Vocal Recording" data-description="Recording vocals with Jay Steez for the Midnight Chronicles album">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item large" data-category="behind-scenes">
+                    <div class="gallery-card">
+                        <img src="gallery images/production meeting.jpg" alt="Team Meeting">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <span class="gallery-category">Behind the Scenes</span>
+                                <h3 class="gallery-title">Production Meeting</h3>
+                                <p class="gallery-date">February 2023</p>
+                            </div>
+                            <button class="view-image" data-src="/placeholder.svg?height=1600&width=2400&text=Team%20Meeting" data-title="Production Meeting" data-description="Planning session with the production team for upcoming projects">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 7 -->
+                <div class="gallery-item" data-category="performance">
+                    <div class="gallery-card">
+                        <img src="gallery images/club night.jpg" alt="DJ Set">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <span class="gallery-category">Performance</span>
+                                <h3 class="gallery-title">Club Night</h3>
+                                <p class="gallery-date">January 2023</p>
+                            </div>
+                            <button class="view-image" data-src="/placeholder.svg?height=1200&width=1600&text=DJ%20Set" data-title="Club Night" data-description="DJ set at Pulse Nightclub featuring new unreleased tracks">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 8 -->
+                <div class="gallery-item vertical" data-category="equipment">
+                    <div class="gallery-card">
+                        <img src="gallery images/synth collection.jpg" alt="Synth Setup">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <span class="gallery-category">Equipment</span>
+                                <h3 class="gallery-title">Synth Collection</h3>
+                                <p class="gallery-date">December 2022</p>
+                            </div>
+                            <button class="view-image" data-src="/placeholder.svg?height=2000&width=1200&text=Synth%20Setup" data-title="Synth Collection" data-description="My collection of vintage and modern synthesizers used for sound design">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 9 -->
+                <div class="gallery-item" data-category="studio">
+                    <div class="gallery-card">
+                        <img src="gallery images/mastering session.jpg" alt="Mastering Session">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <span class="gallery-category">Studio</span>
+                                <h3 class="gallery-title">Mastering Session</h3>
+                                <p class="gallery-date">November 2022</p>
+                            </div>
+                            <button class="view-image" data-src="/placeholder.svg?height=1200&width=1600&text=Mastering%20Session" data-title="Mastering Session" data-description="Final mastering touches on the Trap Evolution compilation album">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 10 -->
+                <div class="gallery-item large" data-category="performance">
+                    <div class="gallery-card">
+                        <img src="gallery images/award.jpg" alt="Award Show">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <span class="gallery-category">Performance</span>
+                                <h3 class="gallery-title">Music Awards</h3>
+                                <p class="gallery-date">October 2022</p>
+                            </div>
+                            <button class="view-image" data-src="/placeholder.svg?height=1600&width=2400&text=Award%20Show" data-title="Music Awards" data-description="Attending the Annual Music Producer Awards ceremony">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 11 -->
+                <div class="gallery-item" data-category="behind-scenes">
+                    <div class="gallery-card">
+                        <img src="gallery images/creative process.jpg" alt="Brainstorming Session">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <span class="gallery-category">Behind the Scenes</span>
+                                <h3 class="gallery-title">Creative Process</h3>
+                                <p class="gallery-date">September 2022</p>
+                            </div>
+                            <button class="view-image" data-src="/placeholder.svg?height=1200&width=1600&text=Brainstorming" data-title="Creative Process" data-description="Brainstorming session for the Ethereal Dreams game soundtrack">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 12 -->
+                <div class="gallery-item vertical" data-category="equipment">
+                    <div class="gallery-card">
+                        <img src="gallery images/microphone.jpg" alt="Microphone Collection">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <span class="gallery-category">Equipment</span>
+                                <h3 class="gallery-title">Microphone Arsenal</h3>
+                                <p class="gallery-date">August 2022</p>
+                            </div>
+                            <button class="view-image" data-src="/placeholder.svg?height=2000&width=1200&text=Microphone%20Collection" data-title="Microphone Arsenal" data-description="My collection of premium microphones for capturing the perfect vocal take">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gallery-load-more">
+                <button id="load-more-gallery" class="btn-primary">
+                    <span>Load More</span>
+                    <i class="fa-solid fa-spinner fa-spin"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fa-solid fa-music"></i>
+                    </div>
+                    <div class="stat-number" data-count="150">0</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fa-solid fa-trophy"></i>
+                    </div>
+                    <div class="stat-number" data-count="12">0</div>
+                    <div class="stat-label">Awards Won</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <div class="stat-number" data-count="75">0</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fa-solid fa-headphones"></i>
+                    </div>
+                    <div class="stat-number" data-count="10">0</div>
+                    <div class="stat-number-suffix">M+</div>
+                    <div class="stat-label">Total Streams</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonial Section -->
+    <section class="testimonial-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Client <span class="gradient-text">Feedback</span></h2>
+                <p class="section-subtitle">What artists and clients say about working with me</p>
+            </div>
+            
+            <div class="testimonial-slider-container">
+                <div class="testimonial-slider" id="testimonial-slider">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-slide active">
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="testimonial-avatar">
+                                    <img src="/placeholder.svg?height=200&width=200" alt="Maya Jones">
+                                </div>
+                                <div class="testimonial-meta">
+                                    <h3 class="testimonial-name">Maya Jones</h3>
+                                    <p class="testimonial-role">Recording Artist</p>
+                                    <div class="testimonial-rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-body">
+                                <div class="testimonial-quote">
+                                    <i class="fa-solid fa-quote-left"></i>
+                                </div>
+                                <p class="testimonial-text">
+                                    Kojo's production skills are unmatched. He took my rough ideas and transformed them into a polished, professional sound that exceeded my expectations. His attention to detail and creative input made all the difference in making my EP stand out in a crowded market.
+                                </p>
+                            </div>
+                            <div class="testimonial-project">
+                                <span>Project:</span> Summer Vibes EP
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="testimonial-avatar">
+                                    <img src="/placeholder.svg?height=200&width=200" alt="Sarah Chen">
+                                </div>
+                                <div class="testimonial-meta">
+                                    <h3 class="testimonial-name">Sarah Chen</h3>
+                                    <p class="testimonial-role">Marketing Director, Refresh Beverages</p>
+                                    <div class="testimonial-rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-body">
+                                <div class="testimonial-quote">
+                                    <i class="fa-solid fa-quote-left"></i>
+                                </div>
+                                <p class="testimonial-text">
+                                    Working with Kojo on our commercial campaign was a game-changer. He understood our brand and created music that perfectly captured the essence of what we wanted to convey. Professional, timely, and incredibly talented. The jingle he created became an instant hit with our audience.
+                                </p>
+                            </div>
+                            <div class="testimonial-project">
+                                <span>Project:</span> Commercial Jingle
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="testimonial-avatar">
+                                    <img src="/placeholder.svg?height=200&width=200" alt="James River">
+                                </div>
+                                <div class="testimonial-meta">
+                                    <h3 class="testimonial-name">James River</h3>
+                                    <p class="testimonial-role">Lead Vocalist, The Wanderers</p>
+                                    <div class="testimonial-rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-body">
+                                <div class="testimonial-quote">
+                                    <i class="fa-solid fa-quote-left"></i>
+                                </div>
+                                <p class="testimonial-text">
+                                    Kojo's mixing skills brought new life to our acoustic album. He preserved the raw, intimate feel while adding clarity and depth that we couldn't achieve on our own. A true professional who listens and delivers exactly what the artist needs.
+                                </p>
+                            </div>
+                            <div class="testimonial-project">
+                                <span>Project:</span> Acoustic Sessions
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-controls">
+                    <button id="testimonial-prev" class="testimonial-arrow prev">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <div class="testimonial-dots">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                    </div>
+                    <button id="testimonial-next" class="testimonial-arrow next">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact CTA -->
+    <section class="contact-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Create Something <span class="gradient-text">Amazing?</span></h2>
+                <p class="cta-text">Let's collaborate on your next project and bring your musical vision to life.</p>
+                <div class="cta-buttons">
+                    <a href="index.html#contact" class="btn-primary">Get in Touch</a>
+                    <a href="index.html#beats" class="btn-outline">Browse Beats</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+              
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#beats">Beats</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="license.html">License Information</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to get updates on new beats and exclusive offers</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2023</span> Kojo Nytro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Project Modal -->
+    <div class="project-modal" id="project-modal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-container">
+            <button class="modal-close" id="close-modal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            
+            <div class="modal-content">
+                <div class="modal-left">
+                    <div class="modal-image-main">
+                        <img src="/placeholder.svg?height=800&width=1200" alt="Project Image" id="modal-main-image">
+                    </div>
+                    <div class="modal-thumbnails" id="modal-thumbnails">
+                        <div class="thumbnail active" data-image="/placeholder.svg?height=800&width=1200">
+                            <img src="/placeholder.svg?height=100&width=150" alt="Thumbnail 1">
+                        </div>
+                        <div class="thumbnail" data-image="/placeholder.svg?height=800&width=1200&text=Image%202">
+                            <img src="/placeholder.svg?height=100&width=150&text=Image%202" alt="Thumbnail 2">
+                        </div>
+                        <div class="thumbnail" data-image="/placeholder.svg?height=800&width=1200&text=Image%203">
+                            <img src="/placeholder.svg?height=100&width=150&text=Image%203" alt="Thumbnail 3">
+                        </div>
+                        <div class="thumbnail" data-image="/placeholder.svg?height=800&width=1200&text=Image%204">
+                            <img src="/placeholder.svg?height=100&width=150&text=Image%204" alt="Thumbnail 4">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="modal-right">
+                    <div class="modal-header">
+                        <div class="modal-meta">
+                            <span class="modal-category" id="modal-category">Category</span>
+                            <span class="modal-date" id="modal-date">Date</span>
+                        </div>
+                        <h2 class="modal-title" id="modal-title">Project Title</h2>
+                    </div>
+                    
+                    <div class="modal-body">
+                        <div class="modal-description" id="modal-description">
+                            <p>Project description will appear here. This will include information about the project, the client, the challenges faced, and the solutions provided.</p>
+                        </div>
+                        
+                        <div class="modal-details">
+                            <div class="detail-row">
+                                <div class="detail-label">Client</div>
+                                <div class="detail-value" id="modal-client">Client Name</div>
+                            </div>
+                            <div class="detail-row">
+                                <div class="detail-label">Services</div>
+                                <div class="detail-value" id="modal-services">Services Provided</div>
+                            </div>
+                            <div class="detail-row">
+                                <div class="detail-label">Genre</div>
+                                <div class="detail-value" id="modal-genre">Music Genre</div>
+                            </div>
+                            <div class="detail-row">
+                                <div class="detail-label">Duration</div>
+                                <div class="detail-value" id="modal-duration">Project Duration</div>
+                            </div>
+                        </div>
+                        
+                        <div class="modal-audio" id="modal-audio-container">
+                            <h4>Listen to Sample</h4>
+                            <div class="audio-player">
+                                <audio id="modal-audio" controls>
+                                    <source src="/placeholder.svg" type="audio/mpeg">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-footer">
+                        <a href="#" class="btn-primary" id="modal-listen-link">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>Listen on Platforms</span>
+                        </a>
+                        <a href="index.html#contact" class="btn-outline">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>Inquire About Similar Project</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Gallery Lightbox -->
+    <div class="gallery-lightbox" id="gallery-lightbox">
+        <div class="lightbox-backdrop"></div>
+        <div class="lightbox-container">
+            <button class="lightbox-close" id="close-lightbox">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            
+            <div class="lightbox-content">
+                <div class="lightbox-image-container">
+                    <img src="/placeholder.svg" alt="Gallery Image" id="lightbox-image">
+                </div>
+                
+                <div class="lightbox-info">
+                    <h3 class="lightbox-title" id="lightbox-title">Image Title</h3>
+                    <p class="lightbox-description" id="lightbox-description">Image description goes here.</p>
+                </div>
+                
+                <div class="lightbox-controls">
+                    <button class="lightbox-arrow prev" id="lightbox-prev">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <div class="lightbox-counter">
+                        <span id="lightbox-current">1</span> / <span id="lightbox-total">12</span>
+                    </div>
+                    <button class="lightbox-arrow next" id="lightbox-next">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <div class="toast-content">
+            <div class="toast-icon">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <div class="toast-message">
+                <h4 class="toast-title">Success!</h4>
+                <p class="toast-description">Your message has been sent successfully.</p>
+            </div>
+        </div>
+        <div class="toast-progress"></div>
+    </div>
+    
+    <!-- Scripts -->
+     <script src="script.js"></script>
+    <script src="portfolio.js"></script>
+</body>
+</html>

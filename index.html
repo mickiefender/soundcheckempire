@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sound Check Empire | Music Producer</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fa-solid fa-music"></i>
+                <span>SOUND CHECK EMPIRE</span>
+            </div>
+            <div class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#beats">Beats</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1 class="fade-in">KOJO NYTRO</h1>
+            <p class="fade-in delay-1">Crafting beats that define the future of sound</p>
+            <div class="hero-buttons fade-in delay-2">
+                <a href="#beats" class="btn btn-primary">Explore Beats</a>
+                <a href="#contact" class="btn btn-outline">Contact Me</a>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text reveal-left">
+                    <h2>About Kojo Nytro</h2>
+                    <p>Kojo Nytro is a visionary music producer with over 10 years of experience in the industry. Specializing in hip-hop, afrobeats, and electronic music, Kojo has worked with some of the biggest names in the music industry.</p>
+                    <p>With a unique approach to sound design and an ear for catchy melodies, Kojo's beats stand out in a crowded marketplace. Each production is crafted with precision and passion, ensuring that artists get the highest quality beats for their projects.</p>
+                    <p>Whether you're an established artist or just starting out, Kojo Nytro has the perfect beat to elevate your sound and help you connect with your audience.</p>
+                </div>
+                <div class="about-image reveal-right">
+                    <div class="image-container">
+                        <img src="images/studio-image.jpg" alt="Kojo Nytro in studio">
+                        <div class="glow-effect glow-1"></div>
+                        <div class="glow-effect glow-2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+            <!-- Statistics Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item reveal-bottom">
+                    <i class="fa-solid fa-music"></i>
+                    <h3 class="counter" data-target="500" data-suffix="+">0</h3>
+                    <p>Beats Created</p>
+                </div>
+                <div class="stat-item reveal-bottom">
+                    <i class="fa-solid fa-users"></i>
+                    <h3 class="counter" data-target="150" data-suffix="+">0</h3>
+                    <p>Satisfied Clients</p>
+                </div>
+                <div class="stat-item reveal-bottom">
+                    <i class="fa-solid fa-award"></i>
+                    <h3 class="counter" data-target="4" data-suffix="">0</h3>
+                    <p>Industry Awards</p>
+                </div>
+                <div class="stat-item reveal-bottom">
+                    <i class="fa-solid fa-headphones"></i>
+                    <h3 class="counter" data-target="10" data-suffix="M+">0</h3>
+                    <p>Total Streams</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+  
+
+    <!-- Beats Marketplace Section -->
+    <section id="beats" class="beats">
+        <div class="container">
+            <div class="section-header reveal-bottom">
+                <h2>Explore Beats</h2>
+                <p>Browse through my collection of premium beats. Preview each beat for 20 seconds before making a purchase.</p>
+            </div>
+
+            <div class="filters reveal-bottom">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="Hip Hop">Hip Hop</button>
+                <button class="filter-btn" data-filter="Afrobeats">Afrobeats</button>
+                <button class="filter-btn" data-filter="R&B">R&B</button>
+                <button class="filter-btn" data-filter="Electronic">Electronic</button>
+                <button class="filter-btn" data-filter="Trap">Trap</button>
+                <button class="filter-btn" data-filter="Lo-Fi">Lo-Fi</button>
+            </div>
+
+            <div class="beats-grid">
+                <!-- Beat cards will be dynamically generated here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Audio Player Bar -->
+    <div class="audio-player-bar">
+        <div class="container">
+            <div class="player-content">
+                <div class="player-track-info">
+                    <img id="player-thumbnail" src="/placeholder.svg" alt="Beat thumbnail">
+                    <div>
+                        <h4 id="player-title"></h4>
+                        <p id="player-details"></p>
+                    </div>
+                </div>
+                
+                <div class="player-controls">
+                    <button id="play-pause-btn">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                    <span id="current-time">0:00</span>
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+                    <span id="duration">0:20</span>
+                </div>
+                
+                <div class="player-actions">
+                    <div class="volume-control">
+                        <button id="volume-btn">
+                            <i class="fa-solid fa-volume-high"></i>
+                        </button>
+                        <div class="volume-slider-container">
+                            <input type="range" id="volume-slider" min="0" max="100" value="80">
+                        </div>
+                    </div>
+                    <button id="purchase-btn" class="btn btn-sm btn-primary">
+                        <i class="fa-solid fa-shopping-cart"></i> Purchase
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header reveal-bottom">
+                <h2>Contact Me</h2>
+                <p>Have a question or want to work together? Send me a message and I'll get back to you as soon as possible.</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-form reveal-left">
+                    <div class="form-container">
+                        <h3>Send a Message</h3>
+                        <form id="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Your Name</label>
+                                    <input type="text" id="name" name="name" placeholder="Michael Coleman" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Your Email</label>
+                                    <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="How can I help you?" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" placeholder="Your message here..." rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">
+                                <i class="fa-solid fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="contact-info reveal-right">
+                    <div class="info-container">
+                        <h3>Contact Information</h3>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <p><a href="mailto:kojonytrostyling@gmail.com">kojonytrostyling@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4>Phone</h4>
+                                <p><a href="tel:+233570571247">+233 570 571 247</a></p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4>Studio Location</h4>
+                                <p>Takoradi-Kojokrom, Ghana</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-container">
+                        <h3>Follow Me</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="hours-container">
+                        <h3>Working Hours</h3>
+                        <ul class="hours-list">
+                            <li>
+                                <span>Monday - Friday</span>
+                                <span>10:00 AM - 8:00 PM</span>
+                            </li>
+                            <li>
+                                <span>Saturday</span>
+                                <span>12:00 PM - 6:00 PM</span>
+                            </li>
+                            <li>
+                                <span>Sunday</span>
+                                <span>Closed</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fa-solid fa-music"></i>
+                    <span>KOJO NYTRO</span>
+                </div>
+                <div class="footer-copyright">
+                    &copy; <span id="current-year"></span> Kojo Nytro. All rights reserved.
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="license.html">License Information</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Purchase Modal -->
+    <div class="modal" id="purchase-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Purchase Beat</h2>
+                <button class="close-modal">
+                    <i class="fa-solid fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="beat-info">
+                    <img id="modal-thumbnail" src="/placeholder.svg" alt="Beat thumbnail">
+                    <div>
+                        <h3 id="modal-title"></h3>
+                        <p id="modal-details"></p>
+                        <p id="modal-price" class="price"></p>
+                    </div>
+                </div>
+                
+                <div class="purchase-details">
+                    <h4>What you'll get:</h4>
+                    <ul>
+                        <li>Untagged WAV file</li>
+                        <li>MP3 file</li>
+                        <li>Trackout stems</li>
+                        <li>Unlimited commercial use</li>
+                        <li>License certificate</li>
+                    </ul>
+                </div>
+                
+                <p class="terms">
+                    By purchasing, you agree to our licensing terms. After payment, you'll receive download links via email.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline" id="cancel-purchase">Cancel</button>
+                <button class="btn btn-primary" id="confirm-purchase">Continue to WhatsApp</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <div class="toast-content">
+            <i class="fa-solid fa-check-circle"></i>
+            <div class="toast-message">
+                <span class="toast-title">Success!</span>
+                <span class="toast-description">Your message has been sent successfully.</span>
+            </div>
+        </div>
+        <div class="toast-progress"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="audio-player.js"></script>
+    <script src="counter.js"></script>
+</body>
+</html>
